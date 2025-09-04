@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo and Title */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/img/logo.png" alt="Logo" className="h-10 w-10 object-contain" />
+            <img src="src/img/logo.png" alt="Logo" className="h-10 w-10 object-contain" />
             <span className="text-2xl font-semibold tracking-wide">RoboAnalyzer</span>
           </Link>
 

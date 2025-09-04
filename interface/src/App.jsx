@@ -6,6 +6,7 @@ import Register from './pages/Register';
 import Chatbot from './components/Chatbot';
 import CommunityChat from './components/CommunityChat';
 import ProtectedRoute from './components/ProtectedRoute';
+import ImageSlider from './components/ImageSlider';
 
 function App() {
   return (
@@ -13,7 +14,12 @@ function App() {
       <div className='min-h-screen bg-gray-100'>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={
+            <>
+              <Home />
+              <ImageSlider />
+            </>
+          } />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/chatbot' element={<Chatbot />} />
