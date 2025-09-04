@@ -15,7 +15,6 @@ npm start
 You should see:
 ```
 Server running on http://localhost:5000
-```
 
 ### 2. Start the Frontend
 ```bash
