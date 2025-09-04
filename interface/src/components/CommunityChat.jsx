@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 import { useNavigate } from 'react-router-dom';
 
-const socket = io('wss://robo-analyzer.onrender.com/:5000');
+const socket = io(`wss://robo-analyzer.onrender.com/:${import.meta.env.VITE_PORT}`);
 
 const CommunityChat = () => {
   const navigate = useNavigate();
